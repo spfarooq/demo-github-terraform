@@ -28,5 +28,5 @@ resource "aws_instance" "linux-pub1" {
 
   tags = {
     Name = var.tag_name
-}
+ }
 }
