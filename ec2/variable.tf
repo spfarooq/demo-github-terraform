@@ -4,7 +4,9 @@ variable "ins_type" {
 variable "ec2_key" {
     type = string  
 }
-
+variable "subnet_id" {
+    type = string  
+}
 variable "cidr_sub1" {
     type = string   
 }
