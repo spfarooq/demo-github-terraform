@@ -8,9 +8,7 @@ variable "ec2_key" {
 variable "cidr_sub1" {
     type = string   
 }
-variable "cidr_sub2" {
-    type = string
-}
+
 variable "ec2_name1" {
     type = string
 }
