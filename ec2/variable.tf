@@ -17,3 +17,6 @@ variable "ec2_name1" {
 variable "ami_id" {
     type = string
 }
+variable "tag_name" {
+    type = string
+}
