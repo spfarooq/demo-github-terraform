@@ -11,11 +11,11 @@
 
 
 resource "aws_instance" "linux-pub1" {
-  ami                         = ""
+  ami                         = "var.ami_id"
   instance_type               = var.ins_type
   associate_public_ip_address = true
   key_name                    = var.ec2_key
-  subnet_id                   = ""
+  subnet_id                   = var.subnet_id
  # vpc_security_group_ids      = data.aws_security_group.prodsg.id
 
   user_data = <<-EOF
