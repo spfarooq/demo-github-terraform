@@ -27,6 +27,6 @@ resource "aws_instance" "linux-pub1" {
   EOF
 
   tags = {
-    Name = "linux-pub1"
-  }
+    Name = var.tag_name
+}
 }
