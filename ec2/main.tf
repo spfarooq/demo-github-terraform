@@ -11,7 +11,7 @@
 
 
 resource "aws_instance" "linux-pub1" {
-  ami                         = "var.ami_id"
+  ami                         = var.ami_id
   instance_type               = var.ins_type
   associate_public_ip_address = true
   key_name                    = var.ec2_key
