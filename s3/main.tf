@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "example" {
   bucket = var.bucket_name
-  acl    = var.acl
+  aws_s3_bucket_acl    = var.acl
 
   tags = {
     Name        = var.bucket_name
